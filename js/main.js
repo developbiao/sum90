@@ -1920,8 +1920,7 @@ zns.site.user={};
 			oP.className='conTxt';
 			oP.innerHTML=
 			'<a href="javascript:;" class="bold before_login"></a>'+
-			'<a href="'+_g_path+'i.php" class="after_login">'+
-			'<img alt="用户头像" src="'+_g_path+'images/regBg.jpg" width="20" height="20" />'+
+			'<a href="#">'+	
 			'<em></em>'+
 			'</a>&nbsp;'+
 			'<a href="javascript:;" class="bold after_login" style="width:auto;">退出</a>&nbsp;'+
@@ -1971,7 +1970,7 @@ zns.site.user={};
 			'</div>'+
 			'<a href="#" class="aLogin">注　册</a>'+
 			'<p class="login_reg">'+
-			'<a href="http://www.zhinengshe.com/news/1.html" target="_blank" style="float:left;">没有邀请码？</a>'+
+			'<a href="#" target="_blank" style="float:left;">not regeEmail</a>'+
 			'<a href="javascript:;">返回</a>'+
 			'</p>'+
 			'</div>'+
