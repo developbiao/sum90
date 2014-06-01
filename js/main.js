@@ -11,7 +11,6 @@ function addTouch(obj, json)
 	
 	if(json.click)obj.onclick=json.click;
 	
-	//手机
 	(function (){
 		myAddEvent(obj, 'touchstart', fnStart);
 		function fnStart(ev)
@@ -965,12 +964,11 @@ var $_GET={};
 })();
 
 (function (){
-	//zhinengshe.com -> www.zhinengshe.com
 	var sLocation=''+window.location;
 	
-	if(sLocation.indexOf('http://zhinengshe.com')==0)
+	if(sLocation.indexOf('http://sum90.com')==0)
 	{
-		window.location=sLocation.replace('http://zhinengshe.com', 'http://www.zhinengshe.com');
+		window.location=sLocation.replace('http://sum90.com', '#');
 	}
 })();
 
@@ -4030,66 +4028,10 @@ zns.site.fx.index_ppt={};
 	
 	var aDataFastNav=
 	[
-		//开班信息
-		[
-		'JS周末班 2012年10月13日开班&nbsp;&nbsp;[已开班]',
-		'JS全日制 2012年10月19日开班&nbsp;&nbsp;&nbsp;&nbsp;<a href="contact.html">[咨询]</a>',
-		'HTML5周末班 2012年10月21日开班 <a href="contact.html">[咨询]</a>',
-		'JS周末班 2012年11月17日开班&nbsp;&nbsp;&nbsp;&nbsp;<a href="contact.html">[咨询]</a>'
-		],
-		//最新留言
-		[
-		'<a href="message.html">老师 这个留言板分页 鼠标移动上去 就...</a>',
-		'<a href="message.html">看到16集里说会开远程教学，不知道是不...</a>',
-		'<a href="message.html">这个站做的真的很牛逼呀，貌似后台都是...</a>',
-		'<a href="message.html">现在有没有能加上的Q群啊blue老湿</a>'
-		],
-		//常见问题
-		[
-		'<a href="js02_desc.html#zns_zt_content">JS课程包括哪些内容？</a>',
-		'<a href="html5_01_desc.html#zns_zt_content">HTML5课程包括哪些内容？</a>',
-		'<a href="js02_desc.html#zns_zt_content">课程收费是多少？</a>',
-		'<a href="contact.html">我想去学习，如何报名呢？</a>'
-		],
-		//综合其他
-		[
-		'<a href="http://www.zhinengshe.com/news/4.html">积分系统上线</a>',
-		'<a href="http://www.zhinengshe.com/news/1.html">邀请码系统开始公测</a>',
-		'<a href="http://zhinengshe.com/video.html">视频教程，已更新到第31集</a>',
-		'<a href="http://zhinengshe.com/contact.html">智能社联系方式</a>'
-		]
 		];
 
 		zns.site.fx.fast_nav.createDOM=function (aData)
 		{
-		/*var oA=document.createElement('a');
-		
-		oA.innerHTML='';
-		oA.href='http://www.zhinengshe.com/one/';
-		oA.className='one';
-		oA.target='_blank';
-		
-		var oDiv=document.createElement('div');
-		
-		oDiv.className='anniversary';
-		oDiv.innerHTML='<a href="http://www.zhinengshe.com/one/index.html" target="_blank"><img src="images/index_pic/anniversary.jpg"></a><a href="javascript:;" title="关闭" class="anniversaryClose"></a>';
-		
-		oDiv.children[1].onclick=function ()
-		{
-			oDiv.style.display='none';
-		};
-		
-		oA.onclick=function ()
-		{
-			//oDiv.style.display='block';
-			
-			//return false;
-		};
-		
-		//document.body.appendChild(oDiv);
-		document.body.appendChild(oA);
-		
-		return;*/
 		
 		function createUl(data)
 		{
@@ -4107,12 +4049,12 @@ zns.site.fx.index_ppt={};
 		oDiv.className='fast_nav';
 		
 		oDiv.innerHTML=
-		'<div class="fastNav_close" title="关闭"></div>'+
-		'<img src="http://www.zhinengshe.com/images/fast_nav.png" class="fast_navImg" alt="" />'+
+		'<div class="fastNav_close" title="0"></div>'+
+		'<img src="#/images/fast_nav.png" class="fast_navImg" alt="" />'+
 		'<div class="fastNavBox_tran_01">'+
 		'<div class="fastNavBox fastNav_lt">'+
 		'<div class="hr_27"></div>'+
-		'<h3 class="fastCom_title_l">近期开班信息</h3>'+
+		'<h3 class="fastCom_title_l">0</h3>'+
 		'<div class="hr_15"></div>'+
 		createUl(aData[0])+
 		'</div>'+
@@ -4120,7 +4062,7 @@ zns.site.fx.index_ppt={};
 		'<div class="fastNavBox_tran_02">'+
 		'<div class="fastNavBox fastNav_rt">'+
 		'<div class="hr_27"></div>'+
-		'<h3 class="fastCom_title_r">最新留言</h3>'+
+		'<h3 class="fastCom_title_r">0</h3>'+
 		'<div class="hr_15"></div>'+
 		createUl(aData[1])+
 		'</div>'+
@@ -4132,7 +4074,7 @@ zns.site.fx.index_ppt={};
 		createUl(aData[2])+
 		'</div>'+
 		'<div class="hr_27"></div>'+
-		'<h3 class="fastCom_title_l">常见问题</h3>'+
+		'<h3 class="fastCom_title_l">0</h3>'+
 		'</div>'+
 		'</div>'+
 		'<div class="fastNavBox_tran_04">'+
@@ -4142,7 +4084,7 @@ zns.site.fx.index_ppt={};
 		createUl(aData[3])+
 		'</div>'+
 		'<div class="hr_27"></div>'+
-		'<h3 class="fastCom_title_r">综合其他</h3>'+
+		'<h3 class="fastCom_title_r">0</h3>'+
 		'</div>'+
 		'</div>';
 		
@@ -4161,9 +4103,7 @@ zns.site.fx.index_ppt={};
 	
 	zns.site.fx.fast_nav.create=function ()
 	{
-		/*zns.site.fx.fast_nav.createDOM(aDataFastNav);
 		
-		return;*/
 		if(zns.site.fx.browser_test.IE6)
 		{
 			return;
@@ -4676,42 +4616,6 @@ zns.site.fx.message={};
 				var aDiv=getEle('.list', oDiv);
 				
 				var i=data.list.length-1;
-				//var i=0;
-				
-				/*if(aDiv.length!=data.list.length)alert('需要完善');
-				
-				var timer=setInterval(function (){
-					aDiv[i].style.WebkitTransform='perspective(1000px) rotateX(0deg) translateZ(100px) scale(0.9)';
-					aDiv[i].i=i;
-					var waitMod=true;
-					buffer(aDiv[i], {x: 0, opacity: 1}, {x: 360, opacity: -1}, function (now){
-						this.style.WebkitTransform='perspective(1000px) rotateX('+now.x+'deg) translateZ(100px) scale(0.9)';
-						this.style.opacity=Math.abs(now.opacity);
-						
-						if(now.opacity<0 && waitMod)
-						{
-							waitMod=false;
-//							alert(this.i);
-							var sTime=time2date(data.list[this.i].post_time);
-							var aTime=sTime.split(' ');
-							
-							getEle('.userName', this)[0].innerHTML=data.list[this.i].title;
-							getEle('.time', this)[0].innerHTML=aTime[0]+'<em></em>'+aTime[1];
-							getEle('.userHead img', this)[0].src=data.list[this.i].face;
-							getEle('.userCon p', this)[0].innerHTML=data.list[this.i].content;
-						}
-					}, function (){
-						this.style.WebkitTransform='';
-						
-						if(this==aDiv[0])ready=true;
-					}, 15);
-					i--;
-					
-					if(i<0)
-					{
-						clearInterval(timer);
-					}
-				}, 400);*/
 
 function inner(){
 	if(!data.list[i].face_m)data.list[i].face_m='userPic.png';
@@ -5753,18 +5657,10 @@ zns.site.fx.video._create_block=function (data, pageCount, fnChange)
 				'</p>'+
 				'<div class="video_play" style="display:block; filter:alpha(opacity:0); opacity:0;">'+
 				'<a href="'+oData.down_url+'" title="点击播放该视频" class="vLink" target="_blank"></a>'+
-							/*'<div class="video_download">'+
-								'<span class="vDownLoadTxt">视频下载：</span>'+
-								'<a href="#" class="vd_yunpan" title="360云盘" target="_blank"></a>'+
-								'<a href="#" class="vd_baidu" title="百度网盘" target="_blank"></a>'+
-								'<a href="#" class="vd_sina" title="新浪网盘" target="_blank"></a>'+
-								'<a href="#" class="vd_xunlei" title="迅雷快传" target="_blank"></a>'+
-								'<a href="#" class="vd_huawei" title="华为网盘" target="_blank"></a>'+
-								'</div>'+*/
 								'</div>'+
 								'</div>'+
 								'<div class="video_content null_content" style="display:none;">'+
-								'<a href="http://bbs.zhinengshe.com/forum-36-1.html" target="_blank"><img src="images/video_next.jpg" class="video_img" /></a>'+
+								'<a href="http://www.sum90.html" target="_blank"><img src="images/video_next.jpg" class="video_img" /></a>'+
 								'</div>'+
 								'<div class="video_shadow"></div>';
 
@@ -5805,53 +5701,6 @@ zns.site.fx.video._create_block=function (data, pageCount, fnChange)
 						buffer(oPlayDiv, {opacity: opacity}, {opacity: 0}, doMoveOpacity);
 					}, 100);
 				};
-				//var oBtn=getEle('.vLink', oNewDiv)[0];
-				
-				//播放弹出层
-				/*(function (){
-					var oBtn=getEle('.vLink', oNewDiv)[0];
-					//var oDiv=getEle('#video_box')[0];
-					
-					oBtn.onclick=function ()
-					{
-						var oMask=getEle('.shadow_bg')[0];
-						
-						if(getEle('.fast_nav')[0])
-						{
-							getEle('.fast_nav')[0].style.zIndex=997;
-						}
-						buffer(oMask, {opacity: 0}, {opacity: 80}, function (now){
-							setStyle(this, now);
-							oMask.style.display='block';
-						}, function (){
-							oDiv.style.height='0';
-							oDiv.style.display='block';
-							window.onresize();
-							
-							getEle('.video_play_alert', oDiv)[0].style.visibility='hidden';
-							buffer(oDiv, {height: 0, marginTop: 290}, {height: 580, marginTop: 0}, function (now){
-								this.style.height=now.height+'px';
-								this.style.marginTop=now.marginTop+'px';
-							}, function (){
-								getEle('.video_play_alert', oDiv)[0].style.visibility='visible';
-								
-								loadVideo(oNewDiv.data.id, oDiv);
-							}, 10);
-						});
-					};
-					
-					//关闭按钮
-					getEle('.title_colse', oDiv)[0].onclick=function ()
-					{
-						closePlayer();
-					};
-					
-					window.onresize=function ()
-					{
-						oDiv.style.left=(document.documentElement.clientWidth-oDiv.offsetWidth)/2+'px';
-						oDiv.style.top=(document.documentElement.clientHeight-580)/2+'px';
-					};
-				})();*/
 
 oDiv.insertBefore(oNewDiv, oPage);
 })(i);
@@ -5898,269 +5747,6 @@ oDiv.insertBefore(oNewDiv, oPage);
 			if(nowPage<oPage.children.length-3)fnChange(nowPage+1);
 		}
 	};
-	
-	/*function closePlayer(fnEnd)
-	{
-		var oDiv=getEle('#video_box')[0];
-		
-		getEle('.video_play_alert', oDiv)[0].style.visibility='hidden';
-		buffer(oDiv, {height: 580, marginTop: 0}, {height: 0, marginTop: 290}, function (now){
-			this.style.height=now.height+'px';
-			this.style.marginTop=now.marginTop+'px';
-		}, function (){
-			oDiv.style.display='none';
-			
-			//oDiv.innerHTML=str_video_player_inner_html;
-			//收起来的时候
-			getEle('.video_play_alert', oDiv)[0].innerHTML='';
-			getEle('.myIntegral', oDiv)[0].innerHTML='';
-			
-			var oMask=getEle('.shadow_bg')[0];
-			buffer(oMask, {opacity: 80}, {opacity: 0}, function (now){
-				setStyle(this, now);
-			}, function (){
-				oMask.style.display='none';
-				
-				if(getEle('.fast_nav')[0])
-				{
-					getEle('.fast_nav')[0].style.zIndex=9999;
-				}
-				
-				fnEnd&&fnEnd();
-			});
-		}, 10);
-	}
-	
-	function loadVideo(id, oDiv)
-	{
-		nowPlayVideoId=id;
-		
-		loadMsg(id, 1);
-		
-		doOps('view');
-		
-		getEle('.internalAd')[0].onclick=function ()
-		{
-			doOps('ad');
-		};
-		
-		var resize=null;
-		bindEvent(window, 'resize', function (){
-			resize&&resize();
-		});
-		
-		request('zpi/video.php', {act: 'get_video', video_id: id}, function (data){
-			nowPlayVideoId=id;
-			//alert(JSON.stringify(data));
-			
-			getEle('.title_txt', oDiv)[0].innerHTML='当前播放：'+data.title;
-			getEle('.setNumberTitle', oDiv)[0].innerHTML=data.title;
-			getEle('.setNumberTitle', oDiv)[1].innerHTML=data.tags;
-			if(!data.password)
-			{
-				if(data.price>0)	//收费、未购买视频
-				{
-					var cip=getEle('.videoCipher', oDiv)[0];
-					cip.innerHTML='<a href="javascript:;" style="color:white;">点击解锁本集密码</a>';
-					
-					getEle('.videoCipher a')[0].onclick=function ()
-					{
-						doOps('pay', function (data){
-							//成功支付，显示密码
-							cip.innerHTML='密码：'+data.password;
-							//更新积分
-							zns.site.user.curUser.point=data.point;
-							getEle('.myIntegral', oDiv)[0].innerHTML='';
-						}, function (desc, error){
-							alert(desc);
-							setTimeout(function (){
-								closePlayer(function (){
-									//blue
-									switch(error)
-									{
-										case 2:	//需要登录
-											zns.site.user.openDialog();
-											break;
-										case 3:	//积分不足
-											(function (){
-												var oDiv=document.getElementById('small_alert');
-												var oTxt=getEle('.alert_input', oDiv)[0];
-												
-												//读取一个验证码过来
-												oTxt.value='读取中...';
-												request('zpi/zns_user.php', {act: 'get_reg_code'}, function (data){
-													oTxt.value='http://www.zhinengshe.com/?reg_code='+data.code;
-												});
-												
-												//框显示出来
-												oDiv.style.display='block';
-												oDiv.style.filter='alpha(opacity:0)';
-												oDiv.style.opacity=0;
-												
-												var oMask=getEle('.shadow_bg')[0];
-												
-												buffer(oMask, {opacity: 0}, {opacity: 80}, function (now){
-													setStyle(this, now);
-													oMask.style.display='block';
-												}, function (){
-													buffer(oDiv, {opacity: 0}, {opacity: 100}, function (now){
-														oDiv.style.filter='alpha(opacity:'+now.opacity+')';
-														oDiv.style.opacity=now.opacity/100;
-													});
-												});
-												
-												resize=function ()
-												{
-													oDiv.style.left=(document.documentElement.clientWidth-oDiv.offsetWidth)/2+'px';
-													oDiv.style.top=(document.documentElement.clientHeight-oDiv.offsetHeight)/2+'px';
-												};
-												
-												resize();
-												
-												//关闭积分框
-												var oBtnClose=getEle('.title_colse', oDiv)[0];
-												
-												oBtnClose.onclick=function ()
-												{
-													buffer(oDiv, {opacity: 100}, {opacity: 0}, function (now){
-														oDiv.style.filter='alpha(opacity:'+now.opacity+')';
-														oDiv.style.opacity=now.opacity/100;
-													}, function (){
-														oDiv.style.display='none';
-														buffer(oMask, {opacity: 80}, {opacity: 0}, function (now){
-															setStyle(this, now);
-															oMask.style.display='block';
-														}, function (){
-															oMask.style.display='none';
-														});
-													});
-												};
-											})();
-											break;
-									}
-								});
-							}, 500);
-						});
-					};
-					
-					if(zns.site.user.curUser)
-					{
-						getEle('.myIntegral', oDiv)[0].innerHTML='解锁本集需<em>'+data.price+'</em>积分 你的积分<em>'+zns.site.user.curUser.point+'</em>分';
-					}
-					else
-					{
-						getEle('.myIntegral', oDiv)[0].innerHTML='解锁本集需<em>'+data.price+'</em>积分 请登录后解锁';
-					}
-				}
-				else
-				{
-					getEle('.videoCipher', oDiv)[0].innerHTML='公开视频';
-				}
-			}
-			else
-			{
-				getEle('.videoCipher', oDiv)[0].innerHTML='密码：'+data.password;
-			}
-			getEle('.video_play_alert', oDiv)[0].innerHTML='<embed src="'+data.swf_url+'" quality="high" width="610" height="506" align="middle" allowScriptAccess="sameDomain" allowFullscreen="true" type="application/x-shockwave-flash"></embed>';
-			
-			if(data.ppt_url)
-			{
-				getEle('#btn_ppt_down')[0].href=data.ppt_url;
-				getEle('#btn_ppt_down')[0].target='_blank';
-			}
-			else
-			{
-				getEle('#btn_ppt_down')[0].href="javascript:alert('即将推出，敬请期待...');";
-				getEle('#btn_ppt_down')[0].target='';
-			}
-		}, function (){
-			alert('视频信息读取失败，建议刷新页面试试');
-		});
-}*/
-
-	/*function createMsg()
-	{
-		var oDiv=getEle('.video_discussion_content')[0];
-		var oTxt=getEle('.videoMessage textarea')[0];
-		var oBtnDown=getEle('.videoMessage .c_input')[0];
-		var oBtnAsk=getEle('.videoMessage .c_input')[2];
-		var oBtnPost=getEle('.videoMessage .c_input')[1];
-		
-		oBtnDown.onclick=function ()
-		{
-			doOps('down');
-		};
-		
-		oBtnAsk.onclick=function ()
-		{
-			doOps('ask');
-		};
-		
-		oBtnPost.onclick=function ()
-		{
-			doOps('msg');
-			request('zpi/video.php', {
-				act: 'add_msg', video_id: nowPlayVideoId, content: oTxt.value
-			}, function (data){
-				var oP=document.createElement('p');
-				
-				data.content=data.content.replace(/</g, '&lt;');
-				data.content=data.content.replace(/>/g, '&gt;');
-				
-				if(zns.site.user.curUser)
-				{
-					oP.innerHTML=zns.site.user.curUser.nick_name+'：'+data.content;
-				}
-				else
-				{
-					oP.innerHTML='ZNS热心网友'+'：'+data.content;
-				}
-				oTxt.value='';
-				
-				oDiv.insertBefore(oP, oDiv.firstChild);
-			});
-		};
-	}
-	
-	function loadMsg(video_id, page)
-	{
-		var oDiv=getEle('.video_discussion_content')[0];
-		oDiv.innerHTML='读取中...';
-		
-		request('zpi/video.php', {
-			act: 'get_msg_page', video_id: video_id, page: page
-		}, function (data){
-			oDiv.innerHTML='';
-			
-			var arr=data.list;
-			
-			for(var i=0;i<arr.length;i++)
-			{
-				var oP=document.createElement('p');
-				
-				if(!arr[i].nick_name)arr[i].nick_name='ZNS热心网友';
-				
-				oP.innerHTML=arr[i].nick_name+'：'+arr[i].content;
-				
-				oDiv.appendChild(oP);
-			}
-		});
-	}
-	
-	function doOps(ops, fnSucc, fnFaild)
-	{
-		//操作
-		//pay
-		//msg/view/ask/ad/true_view/down
-		
-		if(ops!='msg' && ops!='view' && ops!='ask' && ops!='ad' && ops!='true_view' && ops!='down' && ops!='pay')
-		{
-			alert('类型不对');
-			return;
-		}
-		
-		request('zpi/video.php', {act: 'video_ops', video_id: nowPlayVideoId, ops: ops}, fnSucc, fnFaild);
-	}*/
 })();zns.site.fx.one={};
 
 (function (){
