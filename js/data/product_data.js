@@ -1,0 +1,82 @@
+/**
+@Descrition:校园生活照片放到数组中
+@Author:GongBiao
+@Date:2014/05/31
+*/
+var _product_data=[{
+	id:1,num:3522,name_en:'suipai25',pic:'38.png',name:'校园随拍',demo_path:'zns_demo.html',desc_s:'校园随拍风景'
+},{
+	id:2,num:3129,name_en:'suipai24',pic:'37.png',name:'校园随拍',demo_path:'zns_demo.html',desc_s:'校园随拍风景'
+},{
+	id:3,num:3130,name_en:'suipai23',pic:'36.png',name:'校园随拍 Door Menu',demo_path:'zns_demo.html',desc_s:'校园随拍风景'
+},{
+	id:4,num:3131,name_en:'suipai22',pic:'35.png',name:'校园随拍',demo_path:'zns_demo.html',desc_s:'校园随拍风景 '
+},{
+	id:5,num:3132,name_en:'suipai21',pic:'34.png',name:'校园随拍',demo_path:'zns_demo.html',desc_s:'校园随拍风景.'
+},{
+	id:6,num:3133,name_en:'suipai20',pic:'33.png',name:'校园随拍',demo_path:'zns_demo.html',desc_s:'校园随拍风景'
+},{
+	id:7,num:3134,name_en:'suipai_19',pic:'32.jpg',name:'校园随拍',demo_path:'zns_demo.html',desc_s:'校园随拍风景'
+},{
+	id:8,num:3135,name_en:'suipai18',pic:'31.png',name:'校园随拍',demo_path:'zns_demo.html',desc_s:'校园随拍风景'
+},{
+	id:9,num:3136,name_en:'suipai17',pic:'30.png',name:'校园随拍',demo_path:'zns_demo.html',desc_s:'校园随拍风景'
+},{
+	id:10,num:3516,name_en:'suipai16',pic:'29.png',name:'校园随拍',demo_path:'zns_demo.html',desc_s:'校园随拍风景'
+},{
+	id:11,num:3517,name_en:'suipai15',pic:'28.png',name:'校园随拍',demo_path:'zns_demo.html',desc_s:'校园随拍风景'
+},{
+	id:12,num:3518,name_en:'suipai14',pic:'27.png',name:'校园随拍',demo_path:'zns_demo.html',desc_s:'校园随拍风景'
+},{
+	id:13,num:3519,name_en:'suipai13',pic:'26.png',name:'校园随拍',demo_path:'zns_demo.html',desc_s:'校园随拍风景'
+},{
+	id:14,num:3520,name_en:'suipai12',pic:'25.png',name:'校园随拍',demo_path:'zns_demo.html',desc_s:'校园随拍风景'
+},{
+	id:15,num:3521,name_en:'suipai11',pic:'24.png',name:'校园随拍',demo_path:'zns_demo.html',desc_s:'校园随拍风景'
+},{
+	id:16,num:3523,name_en:'suipai10',pic:'23.png',name:'校园随拍',demo_path:'zns_demo.html',desc_s:'校园随拍风景'
+},{
+	id:17,num:3524,name_en:'suipai9',pic:'22.png',name:'校园随拍',demo_path:'zns_demo.html',desc_s:'校园随拍风景'
+},{
+	id:18,num:3525,name_en:'suipai8',pic:'21.png',name:'校园随拍',demo_path:'zns_demo.html',desc_s:'校园随拍风景'
+},{
+	id:19,num:3526,name_en:'suipai7',pic:'20.png',name:'校园随拍',demo_path:'zns_demo.html',desc_s:'校园随拍风景 '
+},{
+	id:20,num:3527,name_en:'suipai6',pic:'19.png',name:'校园随拍',demo_path:'zns_demo.html',desc_s:'校园随拍风景'
+},{
+	id:21,num:3528,name_en:'suipai5',pic:'18.png',name:'校园随拍',demo_path:'zns_demo.html',desc_s:'校园随拍风景'
+},{
+	id:22,num:3529,name_en:'suipai4',pic:'17.png',name:'校园随拍风景',demo_path:'zns_demo.html',desc_s:'校园随拍风景'
+},{
+	id:23,num:3530,name_en:'suipai3',pic:'16.png',name:'校园随拍风景',demo_path:'zns_demo.html',desc_s:'校园随拍风景'
+},{
+	id:24,num:3532,name_en:'suipai2',pic:'15.png',name:'校园随拍',demo_path:'zns_demo.html',desc_s:'校园随拍风景'
+},{
+	id:25,num:3533,name_en:'suipai1',pic:'14.png',name:'校园随拍',demo_path:'zns_demo.html',desc_s:'校园随拍风景'
+},{
+	id:26,num:3534,name_en:'fengyun',pic:'13.jpg',name:'风雨足球场',demo_path:'zns_demo.html',desc_s:'现在还在建设中的风雨足球场'
+},{
+	id:27,num:3535,name_en:'zhongxin',pic:'12.jpg',name:'中心花坛',demo_path:'zns_demo.html',desc_s:'很早以前的照片了，还在有LED了'
+},{
+	id:28,num:3536,name_en:'dor',pic:'11.jpg',name:'长沙民政学院',demo_path:'zns_demo.html',desc_s:'我们的学校大门口'
+},{
+	id:29,num:3537,name_en:'13lib',pic:'10.png',name:'13栋教学楼',demo_path:'zns_demo.html',desc_s:'13栋教学楼，就是洋气节'
+},{
+	id:30,num:3538,name_en:'liber2',pic:'9.png',name:'图书馆',demo_path:'zns_demo.html',desc_s:'知识的海洋'
+},{
+	id:31,num:3539,name_en:'wowo',pic:'8.png',name:'公寓型宿舍',demo_path:'zns_demo.html',desc_s:'合适的生活环境，和学习环境'
+},{
+	id:32,num:3540,name_en:'winhua',pic:'7.png',name:'民政的樱花',demo_path:'zns_demo.html',desc_s:'这可不是日本樱花，民政的樱花'
+},{
+	id:33,num:3541,name_en:'coss',pic:'6.png',name:'运动休闲草坪',demo_path:'zns_demo.html',desc_s:'很阳光的运动休闲草坪'
+},{
+	id:34,num:3542,name_en:'software',pic:'5.png',name:'大软件',demo_path:'zns_demo.html',desc_s:'软件学院'
+},{
+	id:35,num:3543,name_en:'libr',pic:'4.png',name:'图书馆',demo_path:'zns_demo.html',desc_s:'全国数一数二的图书馆'
+},{
+	id:36,num:3545,name_en:'nbac',pic:'3.png',name:'国际化NBA篮球馆',demo_path:'index.html',desc_s:'牛B的NBA篮球馆'
+},{
+	id:37,num:3546,name_en:'dayunhui',pic:'2.png',name:'大运会场',demo_path:'index.html',desc_s:'长沙民政学院大运场地'
+},{
+	id:38,num:3547,name_en:'tiyunguan',pic:'1.png',name:'体育馆',demo_path:'index.html',desc_s:'我们的学校新修的体育馆'
+}]

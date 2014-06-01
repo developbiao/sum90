@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<!-- Sum90团队介绍 -->
+<!--网站重构，我们只想做点有意义的事情，向那些为梦想而努力的人共勉-->
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta charset="UTF-8" /> 
+  <title>Sum90 团队</title> 
+  <meta name="viewport" content="user-scalable=no,width=900" /> 
+  <meta name="keyword" content="sum90,开源爱好者,公益活动,Sum90 Team, 校园团队" /> 
+  <meta name="Author" content="GongBiao" /> 
+  <meta name="description" content="sum90是大学生自发组织的的开源团队，主要为了帮助同学解决电脑和网络问题" /> 
+  <meta property="qc:admins" content="65033662676355106375" />
+  
+  <link rel="shortcut icon" href="./firefox.png" /> 
+  <style>
+	/*@PKAV的CSS帮助，成都的牛人都牛叉*/
+body{overflow-x: hidden;}
+body,h1,h2,h3,h4,p,form,ol,ul{margin:0;}
+.bugs ol,ul{padding:0;}
+body,textarea,input,option{font:16px \5FAE\8F6F\96C5\9ED1,\534E\6587\7EC6\9ED1,arial,sans-serif;color:#031A1F;}
+h1,h2,h3,h4{font-weight:300;}
+textarea:focus{outline:none;}
+::selection{background:rgba(0,149,255,0.1);}
+
+ul{list-style-type:none;}
+a{color:#A26700;text-decoration:none;}
+
+.o{overflow:hidden;zoom:1;}
+
+.container{padding:32px;}
+.inner{width:760px;padding:40px 0;margin:0 auto;}
+
+#header{height:0px;}
+
+#about{background:#FAFAF2;}
+
+#member{color:#FFF;height:710px;padding:50px;
+	position:relative;background:#EFEFEF;}
+
+#member h2{margin-top:-20px;}
+
+.memberList{width:784px;height:594px;margin:0 auto;background:url(all.jpg) no-repeat;}
+.memberLi{float:left;width:196px;height:297px;background:rgba(239,239,239,0);position:relative;}
+.memberList:hover .memberLi{background:rgba(239,239,239,.9);}
+.memberList .memberLi:hover{background:rgba(239,239,239,0);}
+
+.memberLi div{opacity:0;
+background:#FFF;
+width:196px;position:relative;
+}
+.memberLi:hover div{opacity:1;z-index:1;margin-left:196px;}
+
+.tol:hover div{margin-left:-196px;}
+.tob:hover div{margin:150px 0 0 70px;}
+
+
+.memberLi div:after{content:'';position:absolute;right:0;top:0;
+	border:5px solid;border-color:#EFEFEF #EFEFEF #FFF #FFF;}
+
+.memberLi div h3{padding:8px 15px 0;line-height:38px;color:#111;}
+.memberLi div .des{padding:5px 15px;color:#999;text-indent:1em;margin-bottom:5px;font-size:14px;line-height:18px;}
+.memberLi div .tags{margin-bottom:10px;}
+.memberLi div .tags span{float:left;line-height:28px;font-size:12px;padding:0 7px;background:#DDD;margin:0 1px 1px 0;cursor:default;}
+.memberLi div .tags span:hover{background:#AAA;}
+
+.bugs{background:#F4F4F4;padding:5px 0 15px;border-top:1px solid #EEE;}
+.bugs li a{display:block;font-size:12px;line-height:24px;padding:0 7px;color:#999;
+	overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.bugs li a:hover{background:#EDEDED;color:#666;}
+/*
+成员介绍，简介
+*/
+
+
+p{line-height:34px;margin-bottom:20px;}
+
+.header{padding-top:80px;text-align:center;}
+h1{color:#F2F2F2;text-indent:-999em;
+	margin:20px auto 100px;
+	width:339px;height:392px;
+	background:url(logo_2.png) no-repeat 50% 50%;overflow:hidden;
+}
+.header a{font-size:14px;font-style:normal;background:#CBDBDB;background:rgba(0,0,0,.1);color:#E40000;color:#666;text-shadow:rgba(0,0,0,.2) 0 1px 0;border-radius:13px;padding:.25em 1em;}
+.header a:hover{color:#E40000;}
+.boom{opacity:0;
+	-webkit-transform:scale(10);
+	-moz-transform:scale(10);
+	-o-transform:scale(10);
+	transform:scale(10);}
+i{/*,i[class^='i-']*/
+	background-image:url(../icon_bg.png);
+	background-repeat:no-repeat;
+	display:inline-block;height:36px;width:36px;line-height:36px;vertical-align:text-top;}
+i.white{background-image:url(../icon_bg_w.png);}
+
+.i-wordpress{background-position:-178px -66px;}
+.i-weibo{background-position:-178px -122px;}
+.i-fm{background-position:-234px -10px;}
+.i-airplane{background-position:-10px -67px;}
+.i-code{background-position:-122px -10px;}
+.i-5d3{background-position:-10px -10px;}
+.i-weimoe{background-position:-234px -122px;}
+.i-rei{background-position:-234px -66px;}
+.i-idea{background-position:-66px -122px;}
+
+h2{font:300 24px '\5FAE\8EDF\6B63\9ED1\9AD4','\5FAE\8F6F\96C5\9ED1','\534E\6587\7EC6\9ED1','\9ED1\4F53',Tahoma,Arial;
+	text-align:center;padding-bottom:30px;color:#222;text-shadow:rgba(0,0,0,.2) 1px 1px 0;}
+h2:before,h2:after{color:#FFF;opacity:.8;}
+h2:before{content:'「'}
+h2:after{content:'」'}
+h3{padding:0 20px 20px;text-shadow:rgba(0,0,0,.1) 1px 1px 0;}
+h4{padding:10px;text-shadow:rgba(0,0,0,.1) 1px 1px 0;}
+
+span[title]:hover{opacity:.6;cursor:help;}
+
+/**/
+
+.links{overflow:hidden;zoom:1;padding:150px 0 80px;margin-right:-15px;text-align:center;}
+.links a{font-size:14px;line-height:36px;padding:5px 20px 5px 5px;border-radius:3px;
+	background:#E0AB2F;background:rgba(160,57,0,.3);color:#FFF;text-shadow:#B27E05 0 1px 1px;
+	margin:0 15px 15px 0;
+	display:inline-block;
+	cursor:pointer;}
+.links a i{float:left;margin:0 12px 0 7px;}
+.links a:hover{background:#C48329;}
+
+.article{padding:50px 0;}
+
+
+
+.page{width:600px;line-height:30px;margin:100px auto;padding:30px 0 29px;background-color:#f4f39e;
+	
+	-moz-border-radius-bottomleft:20px 500px;
+	-moz-border-radius-bottomright:500px 30px;
+	-moz-border-radius-topright:5px 100px;	
+	
+	-webkit-border-bottom-left-radius:20px 500px;
+	-webkit-border-bottom-right-radius:500px 30px;
+	-webkit-border-top-right-radius:5px 100px;
+	
+	border-bottom-left-radius:20px 500px;
+	border-bottom-right-radius:500px 30px;
+	border-top-right-radius:5px 100px;
+	
+	background: 
+		-moz-repeating-linear-gradient(
+			top,
+			#fcf59b,
+			#fcf59b 29px,
+			#81cbbc 30px
+		);
+	
+	background: 
+		-webkit-gradient(
+			linear,
+			left top, left bottom,
+			from(#81cbbc),
+			color-stop(2%, #fcf59b)
+		);
+		
+	background: 
+		repeating-linear-gradient(
+			top,
+			#fcf59b,
+			#fcf59b 29px,
+			#81cbbc 30px
+		);		
+		
+	-webkit-background-size: 100% 30px;
+
+	-moz-box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.2);
+	
+	text-shadow: 0 1px 0 #F6EF97;
+	position: relative;
+}
+
+/*各种样式，其实还是蛮厉害的*/
+.page:after{width:180px;height:30px;content:' ';margin-left:-90px;border:1px solid rgba(200, 200, 200, .8);background:rgba(254, 254, 254,.9);
+	-moz-box-shadow:0 0 3px rgba(0,0,0,.1);-webkit-box-shadow:0 0 3px rgba(0,0,0,.1);box-shadow:0 0 3px rgba(0,0,0,.1);
+	-moz-transform: rotate(-5deg); -webkit-transform: rotate(-5deg);-o-transform: rotate(-5deg);transform: rotate(-5deg);
+	position:absolute;left:50%;top:-15px;}
+.page p{line-height:30px;margin:0 0 30px 0;padding:0 2em;}
+.page h2{line-height:30px;padding:30px;}
+.page small{padding:0 30px;}
+
+
+.inner p{text-indent:2em;}
+.inner small{display:block;text-align:right;font-size:12px;opacity:.5;}
+.inner small:before{content:' — ';}
+
+#ds-thread #ds-reset{padding-bottom:80px;}
+.anchorBL,.ds-powered-by,.ds-sort,.ds-add-image,.ds-sync,.ds-meta,#ds-bubble{display:none !important;}
+.ds-toolbar,a.ds-current,
+#ds-thread #ds-reset .ds-post-self,
+#ds-thread #ds-reset .ds-textarea-wrapper,
+#ds-thread #ds-reset .ds-post-options,
+#ds-thread #ds-reset .ds-post-button{border:0 !important;}
+#ds-thread #ds-reset li.ds-post,
+#ds-thread #ds-reset .ds-toolbar{border-color:rgba(0,0,0,.1) !important;}
+#ds-thread #ds-reset .ds-post-options{height:32px !important;}
+#ds-thread #ds-reset li.ds-post{border-color:rgba(0,0,0,.07) !important;}
+.ds-thread{border-top:0;padding-bottom:5px;}
+ 
+.footer{font-size:14px;padding:0px 0;}
+.footer a{border-bottom:1px dashed #A26700;}
+.footer .link-red{color:#553400;}
+
+html::-webkit-scrollbar-track-piece{background:#B3CBCB;}
+html::-webkit-scrollbar{width:8px;height:8px;}
+html::-webkit-scrollbar-thumb{height:40px;border:0;background-color:#10302B;}
+html::-webkit-scrollbar-thumb:hover{background-color:#051C1A;}
+
+.box-shabow{-webkit-box-shadow:0 0 15px rgba(0,0,0,.15);-moz-box-shadow:0 0 15px rgba(0,0,0,.15);box-shadow:0 0 15px rgba(0,0,0,.15);}
+
+a,.btn,.fm-ctrl span,
+#fm-box .fm-info,
+#fm-box img,#fm-box,
+.header cite,#bg span,#bg b,li,.memberList li div{-webkit-transition:.3s ease;-moz-transition:.3s ease;-o-transition:.3s ease;transition:.3s ease;}
+
+@-webkit-keyframes metro_grey{
+	0%{-webkit-transform:rotateX(0) rotateY(0);}
+	15%{-webkit-transform:rotateX(-5deg) rotateY(-10deg);}
+	23%{-webkit-transform:rotateX(-10deg) rotateY(-5deg);}
+	50%{-webkit-transform:rotateX(-5deg) rotateY(5deg);}
+	80%{-webkit-transform:rotateX(5deg) rotateY(10deg);}
+}
+@-moz-keyframes metro_grey{
+	0%{-moz-transform:rotateX(0) rotateY(0);}
+	15%{-moz-transform:rotateX(-5deg) rotateY(-10deg);}
+	23%{-moz-transform:rotateX(-10deg) rotateY(-5deg);}
+	50%{-moz-transform:rotateX(-5deg) rotateY(5deg);}
+	80%{-moz-transform:rotateX(5deg) rotateY(10deg);}
+}
+
+h1{-webkit-transition:2s ease;-moz-transition:1s ease;-o-transition:1s ease;transition:1s ease;}
+
+@media(max-width:820px){
+	.container{padding:15px;}
+	.inner{width:auto;margin:10px auto;}
+	.fm{float:none;}
+	#photo-slide{height:240px;}
+	.ds-meta,.ds-comments-tabs{display:none;}
+	.ds-toolbar{border:0 !important;}
+	.links{margin:10px auto;text-align:center;}
+	.links a{float:none;display:inline-block;width:36px;height:36px;padding:5px;margin:0 10px 10px 0;overflow:hidden;}
+	.links a i{float:none;vertical-align:baseline;margin:0;}
+	#bookmark{margin:-20px 0;}
+	.header{
+		-webkit-animation:none;
+		-moz-animation:none;
+		-ms-animation:none;
+		-o-animation:none;
+		animation:none;
+	}
+}
+#header{position:relative;}
+video{position:absolute;height:100%;width:100%;z-index:-1;background:#000;}
+#px{position:fixed;top:100px;right:-130px;font:16px/28px 微软雅黑,arial,sans-serif;text-shadow:rgba(0,0,0,.7) 1px 0 0;width:450px;text-align:center;
+	color:#FFF;background:#A50000;padding:2px 0;text-decoration:none;
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	transform:rotate(45deg);
+	box-shadow:0 0 13px rgba(0,0,0,.2);
+	z-index:10000;
+}
+#px span{border:1px dashed #000;display:block;}
+#px:hover{box-shadow:0 0 15px rgba(0,0,0,.3);background:#C60000;}
+#vuln{
+	background:#c13a33;
+	color:white;
+}
+#vuln blockquote{
+	background:#c13a33;
+	margin-left:35%;
+}
+#vuln a{
+	color:#efefef;
+}
+#vuln summary{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+#vuln li{
+    margin-top: 5px;
+}
+/*
+<base target="_blank">*/
+</style> 
+
+  <style type="text/css"></style> 
+  <!--雪花效果--> 
+  <script type="text/javascript" src="../js/jquery-2.0.0.min.js"></script> 
+  <script src="jq.snow.js"></script> 
+  <!--下面是调用方法和参数说明--> 
+  <script>
+	$(function(){
+		$.fn.snow({ 
+			minSize: 5,		//雪花的最小尺寸
+			maxSize: 50, 	//雪花的最大尺寸
+			newOn: 300		//雪花出现的频率 这个数值越小雪花越多
+		});
+	});
+	</script> 
+ </head> 
+ <body> 
+  <div class="box" id="header"> 
+   <div class="header"> 
+    <h1 class="" style="-webkit-animation: metro_grey 21s linear infinite;"></h1> 
+    <a href="#member">Sum90主要成员</a> 
+    <div style="margin-top:53px;"> 
+     <a href="javascript:;" style="background:0;font-size:28px;padding-right:0;" target="_self">香樟树微博</a> 
+     <a href="javascript:;" style="background:0;font-size:28px;padding-right:0;" target="_self">官网社区</a> 
+     <a href="javascript:;" style="background:0;font-size:26px;padding-right:0;" target="_self">Sum90</a> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="box" id="about"> 
+   <div class="inner"> 
+    <div class="article page"> 
+     <h2>关于Sum90团队</h2> 
+     <p></p>
+     <h2>自由、开放、高尚</h2>
+     <p></p> 
+     <center>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用心创造生活，用爱改变网络!</p>
+     </center> 
+     <p>&nbsp;&nbsp;</p> 
+     <small><a href="http://www.sum90.com/weibo">@香樟树</a></small> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="box" id="member"> 
+   <div class="article"> 
+    <h2>Sum90团队成员</h2> 
+    <ul class="memberList"> 
+     <li class="memberLi tol"> 
+      <div> 
+       <h3>彪哥</h3> 
+       <p class="des">Sum90团队创始人，热爱生活，喜欢自由！</p> 
+       <p class="tags o"> <span>Sum90创始人</span> <span>Firefox校园大使</span> <span>90后</span> <span>开源爱好者</span> <span>软开1234班</span> </p> 
+       <ul class="bugs"> 
+        <li><a href="#">Sum90团队创始人</a></li> 
+        <li><a href="#">喜欢玩Linux</a></li> 
+        <li><a href="#">C语言爱好者</a></li> 
+        <li><a href="#">服务器架构</a></li> 
+        <li><a href="#">后山306</a></li> 
+       </ul> 
+      </div> </li> 
+     <li class="memberLi tob"> 
+      <div> 
+       <h3>雷湘文</h3> 
+       <p class="des">文艺青年，爱音乐，爱电影。喜欢轻松自在的生活。为人和善，爱好交友。 </p> 
+       <p class="tags o"> <span>​Sum90队员​</span> <span>​倡导自由网络​</span> <span>​网店店主​</span> <span>​善于理财</span> <span>​阳光男孩​</span> <span>​乒乓球​</span> <span>​音乐​</span> <span>电影</span> </p> 
+       <ul class="bugs"> 
+        <li><a href="#" target="_blank">PS</a></li> 
+        <li><a href="#" target="_blank">flash动画</a></li> 
+        <li><a href="#" target="_blank">破解</a></li> 
+        <li><a href="#" target="_blank">文字控</a></li> 
+        <li><a href="#" target="_blank">软开1234班</a></li> 
+       </ul> 
+      </div> </li> 
+     <li class="memberLi tob"> 
+      <div> 
+       <h3>陈乐元</h3> 
+       <p class="des">专长.NET技术,热爱学习!</p> 
+       <p class="tags o"> <span>.NET高手</span> <span>书法</span> <span>Sum90团队主要成员</span> <span>软硬件协会</span> <span>系统研究</span> </p> 
+       <ul class="bugs"> 
+        <li><a href="#">书法爱好者</a></li> 
+        <li><a href="#">IT民工</a></li> 
+        <li><a href="#">电影控</a></li> 
+        <li><a href="#">有为青年</a></li> 
+       </ul> 
+      </div> </li> 
+     <li class="memberLi tob"> 
+      <div> 
+       <h3>蒋鑫</h3> 
+       <p class="des">羽毛球高手,孤独求败！</p> 
+       <p class="tags o"> <span>文艺青年</span> <span>策划</span> <span>Sum90主要成员</span> </p> 
+       <ul class="bugs"> 
+        <li><a href="#">校体育羽毛球协会高手，孤独求败！</a></li> 
+       </ul> 
+      </div> </li> 
+     <li class="memberLi tol"> 
+      <div> 
+       <h3>关签</h3> 
+       <p class="des">C++大牛，技术宅，微电影控</p> 
+       <p class="tags o"> <span>C++高手</span> <span>摄影爱好者</span> <span>信息收集</span> </p> 
+       <ul class="bugs"> 
+        <li><a href="#">软件学院的大牛们</a></li> 
+       </ul> 
+      </div> </li> 
+     <li class="memberLi tob"> 
+      <div> 
+       <h3>王麒麟</h3> 
+       <p class="des">网络安全研究....</p> 
+       <p class="tags o"> <span>C语言高手</span> <span>宅男</span> <span>三无青年</span> <span>Sum90团队</span> <span>屌丝男士</span> </p> 
+       <ul class="bugs"> 
+        <li><a href="javascript:alert('虽然不太明白总觉得好厉害')">乐意帮助漂亮妹纸、搬砖、漏洞、</a></li> 
+       </ul> 
+      </div> </li> 
+     <li class="memberLi tob"> 
+      <div> 
+       <h3>钟玉</h3> 
+       <p class="des"> </p> 
+       <p class="tags o"> <span>民院好声音</span> <span>Sum90优秀队员</span> <span>火狐团队队员</span> </p> 
+       <ul class="bugs"> 
+        <li><a href="javascript:alert('虽然不太明白总觉得好厉害')">软开1234班，原303好室友，班上歌霸！</a></li> 
+       </ul> 
+      </div> </li> 
+     <li class="memberLi tob"> 
+      <div> 
+       <h3>新成员</h3> 
+       <p class="des">嘿，我崇拜你们来了</p> 
+       <p class="tags o"> <span>开源社区</span> <span>香樟微博</span> <span>微电影</span> </p> 
+       <ul class="bugs"> 
+        <li><a href="http://www.sum90.com/bbs">官网论坛</a></li> 
+        <li><a href="http://www.sum90.com/weibo">民院微博</a></li> 
+        <li><a href="#">网络安全研究</a></li> 
+        <li><a href="#">大学城空间装扮</a></li> 
+       </ul> 
+      </div> </li> 
+    </ul> 
+   </div> 
+  </div> 
+  <div class="box"> 
+   <div class="inner"> 
+    <div class="footer"> 
+     <p></p>
+     <h2>网站重构中尽情期待！</h2>
+     <h2>民院开源活动交流群：247624813</h2>
+     <p align="right">Sum90 Team join as!</p> 
+    </div> 
+   </div> 
+  </div> 
+  <script>
+ http://www.sum90.com
+
+for(var a=$('.bugs a'),l=a.length,i=0,b=[];i<l;i++){b.push({'href':a[i].href,'title':a[i].innerHTML});};JSON.stringify(b)
+
+
+*/
+
+var member=function(){
+
+}();
+
+return $
+}(window,function(i){return document.getElementById(i)});
+</script>
+  <div>
+   <div id="SL_button" class="ImTranslatorLogo" style="display: none;"></div>
+   <div id="SL_shadow_translation_result2" style="display: none;"></div>
+   <div id="SL_shadow_translator" style="display: none;">
+    <div id="SL_planshet">
+     <div id="SL_TB">
+      <div class="ImTranslatorLogo"></div>
+      <table cellspacing="1" id="SL_tables">
+       <tbody>
+        <tr>
+         <td align="left" width="20%">
+          <div id="SL_lng_from">
+           English&nbsp;&raquo;
+          </div></td>
+         <td align="left" width="20%"><select id="SL_lng_to"><option value="af">Afrikaans</option><option value="sq">Albanian</option><option value="ar">Arabic</option><option value="hy">Armenian</option><option value="az">Azerbaijani</option><option value="eu">Basque</option><option value="bn">Bengali</option><option value="be">Belarusian</option><option value="bg">Bulgarian</option><option value="ca">Catalan</option><option value="zh-CN">Chinese&nbsp;(Siml.)</option><option value="zh-TW">Chinese&nbsp;(Trad.)</option><option value="hr">Croatian</option><option value="cs">Czech</option><option value="da">Danish</option><option value="nl">Dutch</option><option value="en">English</option><option value="eo">Esperanto</option><option value="et">Estonian</option><option value="tl">Filipino</option><option value="fi">Finnish</option><option value="fr">French</option><option value="gl">Galician</option><option value="ka">Georgian</option><option value="de">German</option><option value="el">Greek</option><option value="gu">Gujarati</option><option value="ht">Haitian&nbsp;Creole</option><option value="iw">Hebrew</option><option value="hi">Hindi</option><option value="hu">Hungarian</option><option value="is">Icelandic</option><option value="id">Indonesian</option><option value="ga">Irish</option><option value="it">Italian</option><option value="ja">Japanese</option><option value="kn">Kannada</option><option value="ko">Korean</option><option value="lo">Lao</option><option value="la">Latin</option><option value="lv">Latvian</option><option value="lt">Lithuanian</option><option value="mk">Macedonian</option><option value="ms">Malay</option><option value="mt">Maltese</option><option value="no">Norwegian</option><option value="fa">Persian</option><option value="pl">Polish</option><option value="pt">Portuguese</option><option value="ro">Romanian</option><option value="ru">Russian</option><option value="sr">Serbian</option><option value="sk">Slovak</option><option value="sl">Slovenian</option><option selected="" value="es">Spanish</option><option value="sw">Swahili</option><option value="sv">Swedish</option><option value="ta">Tamil</option><option value="te">Telugu</option><option value="th">Thai</option><option value="tr">Turkish</option><option value="uk">Ukrainian</option><option value="ur">Urdu</option><option value="vi">Vietnamese</option><option value="cy">Welsh</option><option value="yi">Yiddish</option></select></td>
+         <td width="13%" align="center">&nbsp;</td>
+         <td width="8%" align="center">
+          <div id="SL_TTS_voice" title="Listen to the translation"></div></td>
+         <td width="8%" align="center">
+          <div class="SL_copy_hand" id="SL_copy" title="Select text"></div></td>
+         <td width="8%" align="center">
+          <div class="SL_font_off" id="SL_bbl_font" title="Font size"></div></td>
+         <td width="5%"></td>
+         <td width="8%" align="right">
+          <div class="SL_pin_off" id="SL_pin" title="Pin pup-up bubble"></div></td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div id="SL_shadow_translation_result"></div>
+    <div id="SL_bbl_donate" title="Make a small contribution"></div>
+    <div id="SL_Balloon_options">
+     <a href="chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/options-bbl.html" target="_blank" class="SL_options" title="Show options">Options</a>
+    </div>
+   </div>
+  </div> 
+ </body>
+</html>
+

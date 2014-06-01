@@ -1,0 +1,57 @@
+/**
+@Describe:自我介绍布居控制
+@Author:GongBiao
+@Date:2014/06/01
+*/
+ #sume {
+        width:600px;
+        height:500px;
+        _background:#ABCDEF;
+        padding:20px;
+        overflow:hidden;
+        position:relative;
+    }
+    #sume img {
+        width:350px;
+        height:270px;
+        -background:red;
+        background:#000; /*Change this to a background image or remove*/
+        border:solid #fff;
+        border-width:6px 6px 20px 6px;
+        box-shadow:1px 1px 5px #333;
+    }
+    
+    #google_maps {
+        width:600px;
+        height:200px;
+        _background:#ABCDEF;
+        position:relative;
+        float:left;
+    }
+
+    #google_maps .weibo {
+        width:220px;
+        height:220px;
+        -background:#ABCDEF;
+        position:relative;
+        float:right;
+        right:70px;
+
+
+    }
+
+    #google_maps .weibo img{
+        width:140px;
+        height:130px;
+        padding-top:30px;
+    }
+
+    #google_maps .iron_man {
+        width:220px;
+        height:200px;
+        position:relative;
+        right:140px;
+        float:right;
+
+
+    }

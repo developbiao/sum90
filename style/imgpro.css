@@ -1,0 +1,13 @@
+/*为图片创建拍立得效果边框
+
+运用下面代码可以在图片上实现拍立得相片效果——一大片白色边框和细微的阴影。你需要修改图片的宽度/高度值来与你的网站布局相匹配。*/
+img.polaroid {
+    background:#000; /*Change this to a background image or remove*/
+    border:solid #fff;
+    border-width:6px 6px 20px 6px;
+    box-shadow:1px 1px 5px #333; /* Standard blur at 5px. Increase for more depth *
+    -webkit-box-shadow:1px 1px 5px #333;
+    -moz-box-shadow:1px 1px 5px #333;
+    height:200px; /*Set to height of your image or desired div*/
+    width:200px; /*Set to width of your image or desired div*/
+}

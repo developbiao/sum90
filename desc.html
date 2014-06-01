@@ -1,0 +1,309 @@
+<!-- 
+    @Date:2014/05/25
+    @Author:GongBiao
+    @Diescribe:图表页
+-->
+<!doctype html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>个人专业能力</title>
+
+    <meta name="robots" content="all" />
+
+    <link rel="shortcut icon" href=".\images\favicon.ico" />
+
+    <link href="style/common.css" type="text/css" rel="stylesheet" />
+
+    <script src="js/data/news_data.js" type="text/javascript"></script>
+
+    <script src="js/data/product_data.js" type="text/javascript"></script>
+
+    <script src="js/main.js" type="text/javascript"></script>
+
+    <!-- graph leanr-->
+    <link href="./learn/css/default.css" rel="stylesheet" type="text/css" />
+
+    <!-- 这个慢的网 google font 可能用不了 -->
+    <!-- <link href="http://fonts.googleapis.com/css?family=Cabin+Sketch:bold" rel="stylesheet" type="text/css" /> -->
+    <script src="./learn/js/jquery.js" type="text/javascript"></script>
+    <script src="./learn/js/raphael.js" type="text/javascript"></script>
+    <script src="./learn/js/init.js" type="text/javascript"></script>
+
+    <!-- 自定义样式 -->
+    <style type="text/css">
+    #graps {
+        width:700px;
+        left:-10;
+        height:800px;
+        -background:#4f4f4f;
+        position:relative;
+    }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <!-- public head-->
+
+
+    <div class="hr_20"></div>
+
+    <div class="nav">
+
+     <div class="logo">
+
+         <a href="#"><img src="images/logo.png" alt="Sum90 test web" /></a>
+
+     </div>
+
+     <div class="navTxt">
+
+         <div class="hover" style="left:273px"></div>
+
+         <a href="index.html">首&nbsp;页</a><span></span><a href="./school.html">校园生活</a><span></span><a href="./desc.html">我的专业</a><span></span><a href="./showpic/show.html">动感相册</a><span></span><a href="./team/team.htm">团队</a><span></span><a href="./contact.html">联系我吧</a>
+
+     </div>
+
+ </div>
+
+ <!--end公用头部-->
+
+ <!--专题js-->
+
+ <div class="zns_zt" id="zns_zt_content">
+
+     <div class="zt_head">
+
+         <p class="zt_title">
+
+             <span class="zt_title_ico"></span>
+
+             <a href="index.html">首页</a><span>&gt;</span><a href="train_list.html">我的专业</a><span>&gt;</span><em>学习进度</em>
+
+         </p>
+
+         <div class="hr_20"></div>
+
+         <p class="goTop"><a href="#">&gt;&nbsp;返回</a></p>
+
+         <div class="black" style="display:none;">我的学习列表</div>
+
+     </div>
+
+     <div class="zt_cen">
+
+      <div class="content_kc">
+
+         <div class="kcArea_l">
+
+             <a href="javascript:;" class="btn_leftBlue"></a>
+
+             <div class="hidden">
+
+                <ul class="kcNav">
+
+                    <li class="kcNavThis">
+
+                        <a href="html5_01_desc.html#zns_zt_content">我的专业能力</a>
+
+                    </li>
+
+                </ul>
+
+                <div class="kcNav_x"></div>
+
+            </div>
+
+            <div class="txtTop">
+
+
+            </div>
+
+
+
+
+        </div>
+
+        <div class="kcArea_r">
+
+         <div class="kcArea_r_bot">
+
+          <div class="kcArea_r_con">
+
+            <h2 class="kcTit">我的学习图表展示</h2>
+
+            <p class="xxCon">民政就是个坑呀，学习还是要自己努力才行！ ^_^</p>
+
+            <div class="hr_25"></div>
+
+            <div class="courseBox">
+
+             <div class="courseTitle">
+
+                 <h3 class="icon_t01">知识分析</h3>
+
+                 <div class="icon_t01_h">知识分析</div>
+
+             </div>
+             <!-- graps -->
+             <h1>&nbsp;</h1>
+             <h1>&nbsp;</h1>
+             <div id="graps">
+                             <div id="content">
+                <div class="legend">
+                    <h1>Legend:</h1>
+                    <div class="skills">
+                        <ul>
+                            <li class="jq">HTML技术</li>
+                            <li class="css">Linux</li>
+                            <li class="html">Java面向对象</li>
+                            <li class="php">PHP编程</li>
+                            <li class="sql">C语言</li>
+                        </ul>
+                    </div>  
+                </div>
+                <div id="diagram"></div>
+            </div>
+
+
+            <div class="get">
+                <div class="arc">
+                    <span class="text">HTML技术</span>
+                    <input type="hidden" class="percent" value="95" />
+                    <input type="hidden" class="color" value="#97BE0D" />
+                </div>
+                <div class="arc">
+                    <span class="text">Linux</span>
+                    <input type="hidden" class="percent" value="60" />
+                    <input type="hidden" class="color" value="#D84F5F" />
+                </div>
+                <div class="arc">
+                    <span class="text">Java</span>
+                    <input type="hidden" class="percent" value="80" />
+                    <input type="hidden" class="color" value="#88B8E6" />
+                </div>
+                <div class="arc">
+                    <span class="text">PHP</span>
+                    <input type="hidden" class="percent" value="53" />
+                    <input type="hidden" class="color" value="#BEDBE9" />
+                </div>
+                <div class="arc">
+                    <span class="text">C语言</span>
+                    <input type="hidden" class="percent" value="45" />
+                    <input type="hidden" class="color" value="#EDEBEE" />
+                </div>
+            </div>
+             </div>
+
+
+
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="zt_foot"></div>
+
+</div>
+
+
+
+<!--公共底部-->
+
+<div class="bottom">
+
+	<p>
+
+
+		<a href="./contact.html">联系方式</a>
+
+		<a href="javascript:;">版权所有</a>
+
+		<a href="javascript:;">湘ICP备[13007529]号</a>
+
+	</p>
+
+</div>
+
+
+
+
+
+<!--end公共底部-->
+
+<script>
+
+zns.site.common.create();
+
+
+
+zns.site.fx.class_list.create();
+
+
+
+zns.site.fx.index_nav.create();
+
+zns.site.user.create();
+
+zns.site.fx.browser_test.create();
+
+
+
+(function (){
+
+	var oBtn=getEle('.goTop a')[0];
+
+	var oDiv=getEle('.black')[0];
+
+	var timer=null;
+
+	
+
+	oDiv.onmouseover=oBtn.onmouseover=function ()
+
+	{
+
+		clearTimeout(timer);
+
+		oDiv.style.display='block';
+
+	};
+
+	oDiv.onmouseout=oBtn.onmouseout=function ()
+
+	{
+
+		clearTimeout(timer);
+
+		timer=setTimeout(function (){
+
+			oDiv.style.display='none';
+
+		}, 50);
+
+	};
+
+})();
+
+</script>
+
+
+
+</body>
+
+</html>
+
